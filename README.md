@@ -16,6 +16,10 @@ You can download the actual version on github or if you prefer a zip [here](http
 - Easily choose wich parameter to display in the UI
 - Order lights independantly from the scene order
 
+## Compatibility
+ Win - Mac
+ R15 - R18
+
 ## About source code
 My initial idea was to do a lights lister for any render engine. 
 But due to a c4d limitation of wich scroll bar is actually scrolled I was not able to synchronize scroll bar for each render engine.
