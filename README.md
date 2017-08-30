@@ -11,7 +11,7 @@ You can download the actual version on github or if you prefer a zip [here](http
 - Enjoy !
 
 ## Features
-- List all c4d lights
+- List all redshift lights
 - Acces to all light parameter throught an UI
 - Easily choose wich parameter to display in the UI
 - Order lights independantly from the scene order
