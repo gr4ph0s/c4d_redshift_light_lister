@@ -6,8 +6,8 @@ The version showed in the video is the v1, some features was added since it.
 [Redshift C4D Light Lister](https://vimeo.com/213734948)
 
 ## Download
-You can download the actual version on github or if you prefer a zip [here](http://graphos.xyz/files/Plugin/graph_redshift_light_lister/graph_redshift_lightlister.zip)
-- Unizip in your c4d plugin folder
+Download the latest zip.
+- Unzip in your c4d plugin folder
 - Enjoy !
 
 ## Features
@@ -18,7 +18,7 @@ You can download the actual version on github or if you prefer a zip [here](http
 
 ## Compatibility
  Win - Mac
- R15 - R18
+ R15 - R20 (Support for R19 and above by Lasse Lauch)
 
 ## About source code
 My initial idea was to do a lights lister for any render engine. 

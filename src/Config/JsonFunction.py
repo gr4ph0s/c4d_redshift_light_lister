@@ -6,7 +6,7 @@ import shutil
 
 class JsonFunction(object):
     test_file = "config_redshift.test"
-    config_file = "config_redshift.json"
+    config_file = "config_rs.json"
     folder = "redshift_light_lister"
 
     def isWrittableFolder(self, path, temp=False):

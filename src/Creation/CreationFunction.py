@@ -17,7 +17,7 @@ class CreationFunction(object):
 
         #On init un bmp pour resize l'image
         bmp = c4d.bitmaps.BaseBitmap()
-        if bmp.Init(size/6.5, size/6.5, temp.GetBt()) != c4d.IMAGERESULT_OK:
+        if bmp.Init(int(size/6.5), int(size/6.5), temp.GetBt()) != c4d.IMAGERESULT_OK:
             return False
         bmp.AddChannel(True, True)
 
