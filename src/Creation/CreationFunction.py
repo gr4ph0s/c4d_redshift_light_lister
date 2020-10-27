@@ -62,7 +62,7 @@ class CreationFunction(object):
             dialog.AddSeparatorH(0)
 
 
-            for i in xrange(len(lights_list)):
+            for i in range(len(lights_list)):
                 if dialog.GroupBegin(ui_id_grp + i + 2, c4d.BFH_SCALEFIT | c4d.BFV_TOP, 1, 2, "", c4d.BFV_GRIDGROUP_EQUALROWS):
                     dialog.GroupSpace(1, 1)
 
@@ -98,7 +98,7 @@ class CreationFunction(object):
         if dialog.GroupBegin(ui_id, c4d.BFH_LEFT | c4d.BFV_SCALEFIT, 1, const.STEP):
             dialog.AddStaticText(ui_id + 1, c4d.BFH_LEFT | c4d.BFV_TOP, 0, 10, "", c4d.BORDER_NONE)
             dialog.AddSeparatorH(0)
-            for i in xrange(len(light_list)):
+            for i in range(len(light_list)):
                 self.create_bitmap(dialog, ui_id + i + 2, 16, 16, light_list[i]["light"][c4d.ID_BASEOBJECT_GENERATOR_FLAG])
         dialog.GroupEnd()
 
@@ -106,7 +106,7 @@ class CreationFunction(object):
         if dialog.GroupBegin(ui_id, c4d.BFH_LEFT | c4d.BFV_SCALEFIT, 1, const.STEP):
             dialog.AddStaticText(ui_id + 1, c4d.BFH_LEFT | c4d.BFV_TOP, 0, 10, column_name, c4d.BORDER_NONE)
             dialog.AddSeparatorH(0)
-            for i in xrange(len(lights_list)):
+            for i in range(len(lights_list)):
                 dialog.AddButton(ui_id + i + 2, c4d.BFH_LEFT | c4d.BFV_TOP, 0, 13, button_text)
         dialog.GroupEnd()
 
@@ -119,7 +119,7 @@ class CreationFunction(object):
         if dialog.GroupBegin(ui_id, c4d.BFH_SCALEFIT | c4d.BFV_SCALEFIT, 1, const.STEP):
             dialog.AddStaticText(ui_id + 1, c4d.BFH_SCALEFIT|c4d.BFV_TOP, 0, 10, column_name, c4d.BORDER_NONE)
             dialog.AddSeparatorH(0)
-            for i in xrange(len(lights_list)):
+            for i in range(len(lights_list)):
                 dialog.AddComboBox(ui_id + i + 2, c4d.BFH_SCALEFIT|c4d.BFV_TOP, 0, 13, False)
                 for data in cycle_data:
                     dialog.AddChild(ui_id + i + 2, int(data["id"]), str(data["text"]))
@@ -129,7 +129,7 @@ class CreationFunction(object):
 
                 elif lights_list and id_to_read is None:
                     active_layer = lights_list[i][txt_type][c4d.ID_LAYER_LINK]
-                    for y in xrange(len(layers)):
+                    for y in range(len(layers)):
                         if active_layer == layers[y]:
                             dialog.SetLong(ui_id + i + 2, int(y + 1))
 
@@ -148,7 +148,7 @@ class CreationFunction(object):
 
         dialog.AddStaticText(ui_id + 1, c4d.BFH_LEFT | c4d.BFV_TOP, 0, 10, column_name, c4d.BORDER_NONE)
         dialog.AddSeparatorH(0)
-        for i in xrange(len(lights_list)):
+        for i in range(len(lights_list)):
             dialog.AddEditText(ui_id + i + 2, c4d.BFH_SCALEFIT | c4d.BFV_TOP, 0, 13)
 
             if lights_list:
@@ -167,7 +167,7 @@ class CreationFunction(object):
         if dialog.GroupBegin(ui_id, c4d.BFH_SCALEFIT | c4d.BFV_SCALEFIT, 1, const.STEP):
             dialog.AddStaticText(ui_id + 1, c4d.BFH_SCALEFIT|c4d.BFV_TOP, 0, 10, column_name, c4d.BORDER_NONE)
             dialog.AddSeparatorH(0)
-            for i in xrange(len(lights_list)):
+            for i in range(len(lights_list)):
                 dialog.AddCheckbox(ui_id + i + 2, c4d.BFH_CENTER | c4d.BFV_TOP, 0, 16, "")
 
                 if lights_list:
@@ -183,7 +183,7 @@ class CreationFunction(object):
         if dialog.GroupBegin(ui_id, c4d.BFH_SCALEFIT | c4d.BFV_SCALEFIT, 1, const.STEP):
             dialog.AddStaticText(ui_id + 1, c4d.BFH_SCALEFIT|c4d.BFV_TOP, 0, 10, column_name, c4d.BORDER_NONE)
             dialog.AddSeparatorH(0)
-            for i in xrange(len(lights_list)):
+            for i in range(len(lights_list)):
                 dialog.AddColorField(ui_id + i + 2, c4d.BFH_CENTER|c4d.BFV_TOP, 40, 15)
 
                 buffer_vector = lights_list[i][txt_type][id_to_read]
@@ -203,7 +203,7 @@ class CreationFunction(object):
         if dialog.GroupBegin(ui_id, c4d.BFH_SCALEFIT | c4d.BFV_SCALEFIT, 1, const.STEP):
             dialog.AddStaticText(ui_id + 1, c4d.BFH_SCALEFIT|c4d.BFV_TOP, 0, 10, column_name, c4d.BORDER_NONE)
             dialog.AddSeparatorH(0)
-            for i in xrange(len(lights_list)):
+            for i in range(len(lights_list)):
                 dialog.AddEditNumberArrows(ui_id + i + 2, c4d.BFH_SCALEFIT | c4d.BFV_TOP, 0, 16)
 
                 data = lights_list[i][txt_type][id_to_read]

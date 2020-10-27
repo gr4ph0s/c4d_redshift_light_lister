@@ -2,9 +2,10 @@
 import c4d
 import operator
 
-from Const import Const
+from .Const import Const
 
 const = Const()
+
 
 class LightManager(object):
 
@@ -33,7 +34,6 @@ class LightManager(object):
         bc_tag[1] = new_id
 
         c4d.EventAdd()
-
 
     def get_redshift_light(self):
         doc = c4d.documents.GetActiveDocument()

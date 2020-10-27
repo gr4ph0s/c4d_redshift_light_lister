@@ -359,7 +359,7 @@ class InteractionRedshift(InteractionFunction):
         dialog.Enable(const.REDSHIFT_LIGHT_PHYSICALSUN_SATURATION + light_id + 2, state)
 
     def disable_redshift_data(self, dialog, list_lights, layers):
-        for i in xrange(len(list_lights)):
+        for i in range(len(list_lights)):
             light_type = dialog.GetLong(const.LIGHT_LISTER_REDSHIFT_LIGHT_TYPE + i + 2)
 
             #AREA, POINT, SPOT, INFINITE

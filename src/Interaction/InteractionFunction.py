@@ -108,9 +108,6 @@ class InteractionFunction(object):
         if not bc_tag[0]:
             return False
 
-        print light
-        print bc_tag[1]
-
         return bc_tag[1]
 
     def enable_interaction(self, dialog, doc, ui_id, clicked_id, c4d_lights, obj_type=const.OBJ):

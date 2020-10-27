@@ -1,6 +1,6 @@
-import Config
-import Creation
-import Interaction
+from . import Config
+from . import Creation
+from . import Interaction
 
-from Const import  Const
-from LightManager import LightManager
+from .Const import Const
+from .LightManager import LightManager
